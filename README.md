@@ -27,3 +27,5 @@ The configuration is done in the _Subscribed.pm_ file.
 + The _download_ subroutine will be called on each video id.
 
 _Tip: If one wants to subscribe to a channel. Get a hold of the channel id, replace the leading 'UC' with 'UU'. The resulting string is the ID of a playlist containing all of the channels videos._
+## Contributing
+Not actively looking for contributors, but any pull request is welcome. No hard feelings if I don't agree with you, you can live with your own fork.
