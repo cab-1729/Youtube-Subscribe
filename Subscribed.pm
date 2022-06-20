@@ -1,4 +1,4 @@
-#Disclaimer: This file is made for illustrative purposes only. It is purely fictional and does not represent the preferences and opinions of the author. Any similarities with configurations of other people in real life are coincidental. This project does not endorse any of the Youtube channels mentioned.
+#Disclaimer: This file is made for illustrative purposes only. It is purely fictional and does not represent the preferences or opinions of the author. This project does not endorse any of the Youtube channels mentioned.
 package Subscribed;
 use warnings;
 use strict;
@@ -43,7 +43,7 @@ our sub api_key{
 	return "YOUR YOUTUBE API KEY";
 }
 our sub download{
-	#you may rewrite this function to suit your own ways of downloading yourtube videos
+	#you may rewrite this function to suit your own ways of downloading youtube videos
 	my ($id,$directory)=@_;
 	chdir "$directory";
 	system("yt-dlp --write-thumbnail --embed-chapters https://www.youtube.com/watch?v=$id");
