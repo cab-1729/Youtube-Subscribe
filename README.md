@@ -4,7 +4,7 @@ Allows one to "subscribe" to playlists one youtube. New videos are downloaded ev
 The configuration is done in the _Subscribed.pm_ file.
 
 ## Important details:
-+ Requires (Youtube Data API)[https://developers.google.com/youtube/v3] key.
++ Requires [Youtube Data API](https://developers.google.com/youtube/v3) key.
 + Downloads videos locally.
 + Remembers last videos using the _Done.pm_ file.
 + _Done.pm_ is changed everytime the program is run, so it should be given read and write permissions.
