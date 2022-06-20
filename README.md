@@ -12,7 +12,7 @@ The configuration is done in the _Subscribed.pm_ file.
 + _Done.pm_ is changed everytime the program is run, so it should be given read and write permissions.
 + Topics are not downloaded in any specific order. (for now)
 + Since the program is configured in Perl, usage requires moderate knowledge of Perl.
-+ By default [yt-dlp](https://github.com/yt-dlp/yt-dlp) is use too download videos. One may change that or change the flags _yt-dlp_ is run with by editing the _download_ subroutine in _Subscribed.pm.
++ By default [yt-dlp](https://github.com/yt-dlp/yt-dlp) is use too download videos. One may change that or change the flags _yt-dlp_ is run with by editing the _download_ subroutine in _Subscribed.pm_.
 + Of course, this is for Unix based operating systems only.
 
 ## About _Subscribed.pm_
