@@ -1,5 +1,5 @@
 # Youtube-Subscribe
-![Safegaurding Copyright from youtube community guidelines](https://lh3.googleusercontent.com/4imy_auKV6UkULHHZWd8wrYA5dNhVMqOmWMfx6JYYKkW1rX3e9OVoXGFjJlfoJ4cqjx1HByTspHPclmaTNy3ZzR3JhoUebnH4LzFGA=v0-s2048)
+<img src="https://lh3.googleusercontent.com/4imy_auKV6UkULHHZWd8wrYA5dNhVMqOmWMfx6JYYKkW1rX3e9OVoXGFjJlfoJ4cqjx1HByTspHPclmaTNy3ZzR3JhoUebnH4LzFGA=v0-s2048" width="200">
 
 My first Perl program, created for personal use and with the intent to learn Perl.
 Allows one to "subscribe" to playlists one youtube. New videos are downloaded every time program is run.
