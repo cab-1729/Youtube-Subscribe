@@ -5,6 +5,16 @@ My first Perl program, created for personal use and with the intent to learn Per
 Allows one to "subscribe" to playlists on youtube. New videos are downloaded every time program is run.
 The configuration is done in the _Subscribed.pm_ file.
 
+## Usage
++ Store you _Done.pm_ and _Subscribed.pm_ in _~/.config/youtube_.
++ Run the _youtube.pl_ file.
++ There will be a pause after each video title is shown:
+```
+y -> Yes (download this)
+n -> No (Ignore this)
+d -> Show the description of the video and ask for input again
+```
+
 ## Important details:
 + Requires [Youtube Data API](https://developers.google.com/youtube/v3) key.
 + Downloads videos locally.
