@@ -35,7 +35,7 @@ foreach my $topic (keys %{$subscribed}){
 				switch(ReadKey 0){
 					case "y" {
 						print "y\n";
-						push @videos,[$videoId,defined($directory)?$directory:"$ENV{HOME}/Desktop/youtube"];
+						push @videos,[$videoId,defined($directory)?$directory:"$ENV{HOME}/Downloads"];
 						$prompt=0;
 					}
 					case "n" {
@@ -55,13 +55,7 @@ foreach my $topic (keys %{$subscribed}){
 }
 print "\n\nPress ENTER to start downloading ...";
 <STDIN>;
-my @downloads=();
-foreach my $video (@videos){#start downloading
-	push @downloads,threads->create(\&Subscribed::download,@{$video});
-}
-foreach my $downloader (@downloads){#wait for downloads to complete
-	$downloader->join();
-}
+map{$_->join()}(map{threads->create(\&Subscribed::download,@{$_})}(@videos));#start downloading
 #update Done module
 open(doneFile,'>',"$ENV{HOME}/.config/youtube/Done.pm") or die $!;
 print doneFile <<EOF;
