@@ -2,7 +2,7 @@
 use warnings;
 use strict;
 use threads;
-use Term::ReadKey;
+use Term::ReadKey qw(ReadMode ReadKey);
 use lib "$ENV{HOME}/.config/youtube";#load configurations
 use LWP::Simple 'get';
 use JSON::Parse 'parse_json';
