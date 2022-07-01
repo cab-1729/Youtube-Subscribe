@@ -46,6 +46,6 @@ our sub download{
 	#you may rewrite this function to suit your own ways of downloading youtube videos
 	my ($id,$directory)=@_;
 	chdir "$directory";
-	system("yt-dlp --write-thumbnail --embed-chapters https://www.youtube.com/watch?v=$id");
+	while(system("yt-dlp --write-thumbnail --embed-chapters https://www.youtube.com/watch?v=$id")){};
 }
 1;
