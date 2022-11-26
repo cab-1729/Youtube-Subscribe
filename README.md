@@ -22,7 +22,7 @@ d -> Show the description of the video and ask for input again
 + _Done.pm_ is changed everytime the program is run, so it should be given read and write permissions.
 + Topics are not downloaded in any specific order. (for now)
 + Since the program is configured in Perl, usage requires moderate knowledge of Perl.
-+ By default [yt-dlp](https://github.com/yt-dlp/yt-dlp) is use too download videos. One may change that or change the flags _yt-dlp_ is run with by editing the _download_ subroutine in _Subscribed.pm_.
++ By default [yt-dlp](https://github.com/yt-dlp/yt-dlp) is used to download videos. One may change that or change the flags _yt-dlp_ is run with by editing the _download_ subroutine in _Subscribed.pm_.
 + Of course, this is for Unix based operating systems only.
 + _Done.pm_ is to be configured once. This includes the last video that was asked from each playlist. When running another time, videos uploaded after that video will be checked.
 + Assumes you haven't missed more than 50 videos for convenience.
