@@ -13,6 +13,7 @@ The configuration is done in the _Subscribed.pm_ file.
 y -> Yes (download this)
 n -> No (Ignore this)
 d -> Show the description of the video and ask for input again
+p -> Show the thumbnail of the video and ask for input again
 ```
 
 ## Important details:
