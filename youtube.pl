@@ -4,7 +4,7 @@ use strict;
 use threads;
 use Term::ReadKey qw(ReadMode ReadKey);
 use lib "$ENV{HOME}/.config/youtube";#load configurations
-use LWP::Simple 'get';
+use LWP::Simple qw(get getstore);
 use JSON::Parse 'parse_json';
 use Switch;
 use Subscribed;
@@ -46,8 +46,15 @@ foreach my $topic (keys %{$subscribed}){
 						print "d\n\n\t\t\tDescription\n\n$snippet->{'description'}\n\n\n";
 						print "\n\t\t$snippet->{'title'} : ";
 					}
+					case "p" {#video thumbnail asked
+						unless(-e "/tmp/$videoId.jpg"){
+							getstore "https://i.ytimg.com/vi/$videoId/hq720.jpg","/tmp/$videoId.jpg";
+						}
+						$subscribed->view_image("/tmp/$videoId.jpg");
+					}
 				}
 			}while($prompt);
+			unlink"/tmp/$videoId.jpg";
 			ReadMode 'normal';
 		}
 	$done->{$playlistId}=$latest_vid;#remember last videoId
