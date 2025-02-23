@@ -37,6 +37,10 @@ our sub new{
 	bless $self,$class;
 	return $self;
 }
+our sub view_image{
+	my ($__,$filename)=@_;
+	system "sxiv \"$filename\"";
+}
 our sub api_key{
 	#This function returns your youtube api key.
 	#You are required to write this function
